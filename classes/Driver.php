@@ -15,15 +15,15 @@ class Driver {
 
       $vowels = ['a', 'e', 'i', 'o', 'u'];
 
-	   foreach(str_split($this->driverName) as $letter){
-	      if($letter == " "){continue;}
+      foreach(str_split($this->driverName) as $letter){
+	 if($letter == " "){continue;}
 
          if(in_array($letter, $vowels)){
             $this->vowels++;
          }else{
             $this->consonants++;
          }
-	   }
+      }
    }
 
    public function setScore(){
