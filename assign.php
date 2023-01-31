@@ -8,7 +8,7 @@
  * 
  * @return Echos out Driver/Destination combination, along with the Suitability Score of that combo
  */
-require_once "classes/Assignment.php";
+require_once "src/classes/Assignment.php";
 
 // if either the destination or driver file isn't passed, die
 if(!isset($argv[1])){die("Please pass in a Destinations filename\n");}
